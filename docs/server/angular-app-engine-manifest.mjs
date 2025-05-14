@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/angular-sevgilim-app',
+  basePath: '/hikayemiz',
   supportedLocales: {
   "en-US": ""
 },
