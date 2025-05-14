@@ -1,0 +1,53 @@
+/* Modal pencerenin dışı */
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal pencerenin içi */
+.bg-white {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-width: 100%;
+  max-height: 90vh;  /* Ekranın %90'ına kadar büyür */
+  overflow: hidden;   /* İçeriğin taşmasını engelle */
+}
+
+/* Modal pencere içerisindeki görsel */
+.w-full {
+  width: 100%;
+  height: auto;
+  max-height: 100%; /* Fotoğrafın yüksekliği sınırsız olacak */
+  object-fit: contain;  /* Resmin orantılı şekilde görünmesi için */
+}
+
+.max-h-screen {
+  max-height: 90vh;  /* Görselin ekranın tamamına yayılmasını engellemek */
+}
+
+/* X işareti */
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Modal pencere için Responsive düzenleme */
+@media (max-width: 768px) {
+  .bg-white {
+    max-width: max-content;
+  }
+}

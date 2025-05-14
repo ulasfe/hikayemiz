@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom component layer’ına ekliyoruz: */
+.background-container {
+  position: relative;
+}
+
+ /* İçeriğin üstte kalması için */
+  .content {
+    position: relative;
+    z-index: -1;
+  }
+
+  @media screen and (min-width:768px) {
+body{
+    background-attachment: scroll;
+    }
+  }
