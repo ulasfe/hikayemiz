@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
   constructor() {
     // Müzik nesnesini başlatıyoruz
     this.sound = new Howl({
-      src: ['/music.mp3'],
+      src: ['music.mp3'],
       autoplay: false, // Başlangıçta otomatik çalmasın
       loop: true,
       volume: 0.5,
